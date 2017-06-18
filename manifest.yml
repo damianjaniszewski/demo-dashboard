@@ -1,8 +1,7 @@
 applications:
 - name: demo-dashboard
-  buildpack: https://github.com/cloudfoundry/nodejs-buildpack#v1.5.36
-  memory: 128M
-  disk: 128M
+  memory: 64M
+  disk: 256M
   instances: 2
   timeout: 30
   stackato:
