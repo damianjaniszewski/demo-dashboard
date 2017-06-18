@@ -1,0 +1,28 @@
+applications:
+- name: demo-dashboard
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack#v1.5.36
+  memory: 128M
+  disk: 128M
+  instances: 2
+  timeout: 30
+  stackato:
+    description: Dashboard
+    autoscale:
+      enabled: true
+      instances:
+        min: 1
+        max: 4
+      cpu:
+        min: 20
+        max: 80
+    # hooks:
+    #   pre-push:
+    #   - gulp dist
+    ignores:
+      - src
+      - .git
+      - .env
+      - .babelrc
+      - customEslintrc.json
+      - gulpfile.js
+      - node_modules

@@ -1,0 +1,21 @@
+{
+  "name": "demo-dashboard",
+  "description": "WIT16 Demo Dashboard example Microservices Oriented Architecture application on HPE Stackato PaaS",
+  "license": "Apache-2.0",
+  "version": "0.1.8",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:damianjaniszewski"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "grommet": "^0.6.2",
+    "grommet-toolbox": "^1.1.1",
+    "uuid": "^2.0.2"
+  },
+  "engines": {
+    "node": "^7.10.0",
+    "npm": "^4.6.1"
+  }
+}
