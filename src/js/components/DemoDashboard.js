@@ -98,7 +98,7 @@ export default class DemoDashboard extends Component {
                 <Header justify='center'>Avg CPU</Header>
                 <RestWatchMeter uuid={this.state.cpuavgUUID} name='CPUavg' value={0} max={100} wsURL={this.state.controllerURL} />
               </Tile>
-                <Tile pad={{ vertical: 'small' }}>
+              <Tile pad={{ vertical: 'small' }}>
                 <Header justify='center'>Clients</Header>
                 <RestWatchMeter uuid={this.state.clientsUUID} name='Clients' value={0} max={100} wsURL={this.state.controllerURL} />
               </Tile>  
